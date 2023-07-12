@@ -1,0 +1,6 @@
+version: '3'
+services:
+  my-app:
+    image: public.ecr.aws/n4z6f6t8/my-app:1.0
+    ports:
+     - 8080:8080 

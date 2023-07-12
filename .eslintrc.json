@@ -1,0 +1,30 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "semi": "off",
+    "@typescript-eslint/semi": "off",
+    "camelcase": "warn",
+    "max-depth": ["warn", 4],
+    "max-lines": [
+      "error",
+      { "max": 500, "skipBlankLines": true, "skipComments": true }
+    ],
+    "no-var": "warn",
+    "prefer-const": "warn",
+    "no-eval": "warn",
+    "no-implied-eval": "warn",
+    "no-extra-parens": "warn",
+    "no-alert": "warn",
+    "no-with": "warn",
+    "@typescript-eslint/keyword-spacing": "warn",
+    "@typescript-eslint/consistent-type-assertions": "warn"
+  }
+}
